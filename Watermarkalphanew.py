@@ -118,7 +118,7 @@ class Config:
 
     @staticmethod
     def from_env() -> "Config":
-        token = os.getenv("BOT_TOKEN", "").strip()
+        token = os.getenv("8893363579:AAHE6JJnoHRgWSZQASC1ih-GJbsP_TiMH_M", "").strip()
         if not token:
             raise SystemExit(
                 "❌ BOT_TOKEN is not set.\n"
@@ -126,7 +126,7 @@ class Config:
                 "2) Set it in the environment or in a .env file:  BOT_TOKEN=123456:ABC...\n"
                 "See .env.example and the README for full instructions."
             )
-        admin_raw = os.getenv("ADMIN_IDS", "").strip()
+        admin_raw = os.getenv("5823149262", "").strip()
         admins: List[int] = []
         for part in re.split(r"[,\s;]+", admin_raw):
             if part.isdigit():
